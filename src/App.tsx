@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home, NotFound, RootErrorBoundary, AnimeDetails } from "./page";
 
 const App = () => {
