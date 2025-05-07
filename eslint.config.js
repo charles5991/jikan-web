@@ -10,7 +10,7 @@ export default tseslint.config(
     extends: [
       js.configs.recommended,
       ...tseslint.configs.recommended,
-      './.eslintrc-auto-import.json',
+      // './.eslintrc-auto-import.json',
     ],
     files: ['**/src/**/*.{ts,tsx}'],
     languageOptions: {

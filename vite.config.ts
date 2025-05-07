@@ -1,5 +1,5 @@
 import path from 'path';
-import AutoImport from 'unplugin-auto-import/vite';
+// import AutoImport from 'unplugin-auto-import/vite';
 import { defineConfig } from 'vite';
 
 // vite plugins
@@ -23,12 +23,12 @@ export default defineConfig({
     imagemin(),
     tailwindcss(),
     Fonts({ google: { families: fonts } }),
-    AutoImport({
-      imports: ['react', 'react-router'],
-      dts: './auto-imports.d.ts',
-      eslintrc: { filepath: './eslint.config.js' },
-      dirs: ['./src/components/ui'],
-    }),
+    // AutoImport({
+    //   imports: ['react', 'react-router'],
+    //   dts: './auto-imports.d.ts',
+    //   eslintrc: { filepath: './.eslintrc-auto-import.json' },
+    //   dirs: ['./src/components/ui'],
+    // }),
   ],
   resolve: {
     alias: {
