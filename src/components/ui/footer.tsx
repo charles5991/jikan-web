@@ -1,5 +1,3 @@
-import { Github } from "lucide-react";
-
 export function Footer() {
   return (
     <footer className="mt-20 border-t border-gray-800 bg-black/50 px-4 py-8">

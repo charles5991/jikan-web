@@ -1,7 +1,7 @@
 import { AnimeCard, AnimeCardSkeleton, Pagination, SearchInput } from "@/components";
 import { Anime, AnimeSearchResult, debounce, searchAnime, getPopularAnime } from "@/utils";
 import { motion } from "framer-motion";
-import { Loader2, Search, TrendingUp } from "lucide-react";
+import { Search, TrendingUp } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router";
 
@@ -242,7 +242,6 @@ export const Home = ({ ...rest }: Props) => {
         )}
       </main>
 
-      {/* Footer */}
       <footer className="mt-20 border-t border-gray-800 bg-black/50 px-4 py-8">
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
