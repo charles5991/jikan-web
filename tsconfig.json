@@ -18,7 +18,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     //  Path Alias
-    "baseUrl": ".",
+    "baseUrl": "https://api.jikan.moe/v4",
     "paths": {
       "@/*": ["./src/*"]
     }
