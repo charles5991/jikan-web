@@ -4,7 +4,7 @@ import { Anime, getAnimeDetails } from "@/utils";
 import { motion } from "framer-motion";
 import { ArrowLeft, ExternalLink, Info, AlertTriangle, Play } from "lucide-react";
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router";
+import { Link, useParams } from "react-router-dom";
 
 export const AnimeDetails = () => {
   const { id } = useParams<{ id: string }>();

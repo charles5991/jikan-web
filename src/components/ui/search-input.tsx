@@ -2,7 +2,7 @@ import { forwardRef, useState, useEffect, KeyboardEvent } from "react";
 import { cn, debounce, getSearchSuggestions, getTrendingSearchTerms, Anime } from "@/utils";
 import { Search, X, Clock, TrendingUp, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 export interface SearchInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   onClear?: () => void;
