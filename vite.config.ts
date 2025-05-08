@@ -1,20 +1,21 @@
-import path from 'path';
+import path from "path";
 // import AutoImport from 'unplugin-auto-import/vite';
-import { defineConfig } from 'vite';
+import { defineConfig } from "vite";
 
 // vite plugins
-import tailwindcss from '@tailwindcss/vite';
-import react from '@vitejs/plugin-react-swc';
-import Fonts from 'unplugin-fonts/vite';
+import tailwindcss from "@tailwindcss/vite";
+import react from "@vitejs/plugin-react-swc";
+import Fonts from "unplugin-fonts/vite";
 // @ts-ignore
-import imagemin from 'unplugin-imagemin/vite';
-import { compression } from 'vite-plugin-compression2';
-import Inspect from 'vite-plugin-inspect';
-import svgr from 'vite-plugin-svgr';
+import imagemin from "unplugin-imagemin/vite";
+import { compression } from "vite-plugin-compression2";
+import Inspect from "vite-plugin-inspect";
+import svgr from "vite-plugin-svgr";
 
-import { fonts } from './configs/fonts.config';
+import { fonts } from "./configs/fonts.config";
 
 export default defineConfig({
+  base: "/",
   plugins: [
     svgr(),
     react(),
@@ -32,7 +33,17 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
+  build: {
+    outDir: "dist",
+    sourcemap: false,
+    minify: "terser",
+    terserOptions: {
+      compress: {
+        drop_console: true,
+      },
     },
   },
 });

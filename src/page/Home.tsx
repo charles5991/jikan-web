@@ -3,7 +3,7 @@ import { Anime, AnimeSearchResult, debounce, searchAnime, getPopularAnime } from
 import { motion } from "framer-motion";
 import { Search, TrendingUp } from "lucide-react";
 import { useEffect, useState } from "react";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 interface Props extends React.ComponentProps<"div"> {}
 
