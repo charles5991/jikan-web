@@ -1,0 +1,16 @@
+{
+  "name": "AnimeDB",
+  "short_name": "AnimeDB",
+  "description": "Search and discover anime",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#141414",
+  "theme_color": "#E50914",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    }
+  ]
+}
